@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Wisnu Pradana</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Challenge chapter 2 BEJS</h1>
+    <h3 style="text-align: center; color: #933393;">
+      <strong>Adam Wisnu Pradana</strong>
+    </h3>
+    <h2 id="saldo">Saldo di rekening: Rp. 0</h2>
+    <p style="font-size: small; color: red;">
+      * jika mau tambah atau kurangi saldo bisa klik tombol di bawah atau bisa
+      juga di console ya!
+    </p>
+    <button
+      onclick="account.deposit(prompt('Masukkan jumlah deposit:'))"
+      style="
+        background-color: #933393;
+        color: white;
+        padding: 12px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      "
+    >
+      Deposite
+    </button>
+    <button
+      onclick="account.withdraw(prompt('Masukkan jumlah withdraw:'))"
+      style="
+        background-color: #933393;
+        color: white;
+        padding: 12px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      "
+    >
+      Withdraw
+    </button>
+
+    <p style="font-size: medium;"><strong>Pilihan menu:</strong></p>
+    <ol>
+      <li>Deposite</li>
+      <li>Withdraw</li>
+    </ol>
+
+    <script src="banking_system.js"></script>
+  </body>
+</html>
